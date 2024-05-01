@@ -61,29 +61,29 @@ export default function Contato() {
                     <div>
                         <label for="nome">Nome</label>
                         <div>
-                            <input value={nome} onChange={onChangeN} type="text" name="nome" id="nome" placeholder="Nome"/>
+                            <input value={nome} onChange={onChangeN} type="text" name="nome" id="nome" placeholder="Nome" className=" text-black"/>
                         </div>
                     </div>
                     <div className="mt-5">
-                        <label for="Sobrenome">Sobrenome</label>
+                        <label for="email">Email</label>
                         <div>
-                            <input value={sobrenome} onChange={onChangeS} type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome"/>
+                            <input value={email} onChange={onChangeE} id="email" name="email" type="email" placeholder="exemplo@email.com" className=" text-black"/>
                         </div>
                     </div>
                 </div>
 
                 <div>
                     <div>
-                        <label for="email">Email</label>
+                        <label for="Sobrenome">Sobrenome</label>
                         <div>
-                            <input value={email} onChange={onChangeE} id="email" name="email" type="email" placeholder="exemplo@email.com"/>
+                            <input value={sobrenome} onChange={onChangeS} type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" className=" text-black"/>
                         </div>
                     </div>
 
                     <div className="mt-5">
                         <label for="telefone">Telefone</label>
                         <div>
-                            <input value={telefone} onChange={onChangeT} id="telefones" name="telefone" type="text" placeholder="(XX) XXXXX-XXXX "/>
+                            <input value={telefone} onChange={onChangeT} id="telefones" name="telefone" type="text" placeholder="(XX) XXXXX-XXXX " className=" text-black"/>
                         </div>
                     </div>
                 </div>   
@@ -91,7 +91,7 @@ export default function Contato() {
                 <div className=" col-span-full">
                     <label For="about">About</label>   
                     <div>
-                        <textarea value={mensagem} onChange={onChangeM} id="about" name="about" rows={3}defaultValue={''} placeholder="Escreva sua mensagem aqui" className=" w-full"/>
+                        <textarea value={mensagem} onChange={onChangeM} id="about" name="about" rows={3}defaultValue={''} placeholder="Escreva sua mensagem aqui" className=" w-full text-black"/>
                     </div> 
                 </div>
             </div>
