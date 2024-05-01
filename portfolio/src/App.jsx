@@ -6,9 +6,11 @@ import Footer from './componentes/Footer/Footer'
 export default function App() {
   return (
     <>
-      <Header/>
-      <Outlet/>
-      <Footer/>
+      <div className='bg-black text-white h-screen'>
+        <Header/>
+        <Outlet/>
+        <Footer/>
+      </div>
     </>
   )
 }

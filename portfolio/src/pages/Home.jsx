@@ -1,11 +1,12 @@
-import Info from "../componentes/Info/Info"
-import Linguas from "../componentes/Linguas/Linguas"
-import Skills from "../componentes/Skills/Skills"
+import Info from "../componentes/Info/Info";
+import Linguas from "../componentes/Linguas/Linguas";
+import Skills from "../componentes/Skills/Skills";
+import perfil from "../img/perfil.png";
 
 export default function Home() {
 
     const baseUsuarios = [
-        {nome:"Eduardo Mazelli", email: "eduardo.mazelli@gmail.com", telefone: "(11) 97649-4397"}
+        {img: perfil, nome:"Eduardo Mazelli", email: "eduardo.mazelli@gmail.com", telefone: "(11) 97649-4397"}
     ]
 
     const baseLinguagens = [
@@ -24,11 +25,12 @@ export default function Home() {
 
 
     return (
-        <div>
-            <h1>Home</h1>
-            <Info baseUsuario={baseUsuarios}/>
+        <div className="flex justify-between py-10 px-20 font-mono">
+            <div>
+                <Info baseUsuario={baseUsuarios}/>
+                <Linguas baseLingua={baseLinguas}/>
+            </div>
             <Skills baseLinguagem={baseLinguagens}/>
-            <Linguas baseLingua={baseLinguas}/>
             
         </div>
     )
