@@ -5,7 +5,7 @@ import { MdCopyright } from "react-icons/md";
 
 export default function Footer() {
     return(
-        <footer className="flex gap-10 justify-center items-center font-mono font-light text-lg bg-gradient-to-r from-rose-500 to-rose-900 h-16 text-white fixed bottom-0 w-screen">
+        <footer className="flex gap-10 justify-center items-center font-mono font-light text-lg bg-gradient-to-r from-rose-500 to-rose-900 h-16 text-white">
                 <div className="flex items-baseline">
                     <MdCopyright className=" self-center"/>
                     <p>2024 GiantMazelli | All rights Reserved</p>
