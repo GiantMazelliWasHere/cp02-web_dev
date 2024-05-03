@@ -25,7 +25,7 @@ export default function Home() {
 
 
     return (
-        <div className="flex justify-between py-10 px-20 font-mono">
+        <div className="flex justify-between m-0 py-10 px-20 font-mono">
             <div>
                 <Info baseUsuario={baseUsuarios}/>
                 <Linguas baseLingua={baseLinguas}/>

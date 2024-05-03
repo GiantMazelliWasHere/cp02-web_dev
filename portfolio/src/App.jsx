@@ -6,7 +6,7 @@ import Footer from './componentes/Footer/Footer'
 export default function App() {
   return (
     <>
-      <div className='bg-black text-white min-h-screen max-h-fit'>
+      <div className=' m-0 mb-14 bg-black text-white'>
         <Header/>
         <Outlet/>
         <Footer/>
