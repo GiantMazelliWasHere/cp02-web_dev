@@ -10,7 +10,7 @@ export default function Projetos() {
 
 
     return (
-        <div className="flex flex-col items-center p-10 font-mono">
+        <div className="flex flex-col items-center p-10 font-mono ">
             <h1 className=" text-5xl font-bold">Projetos</h1>
             <Projeto baseProjetos={baseProjetos}/>
         </div>
